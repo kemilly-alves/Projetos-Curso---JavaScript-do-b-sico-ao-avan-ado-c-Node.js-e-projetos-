@@ -1,23 +1,27 @@
-function multiplicarTresNumeros(x,y,z) {
-    return x * y * z;
+function somarTresNumeros(x,y,z) {
+    return x + y + z;
 }
 
-console.log(multiplicarTresNumeros(2,3,4));
-
-const mult = multiplicarTresNumeros(5,4,8);
-
-console.log("O valor de mult é " + mult);
+// Usando o retorno da função em uma expressão de console.log()
+console.log(somarTresNumeros(10,20,30));
 
 
-function podeDirigir(idade, cnh) {
+// Atribuir o valor a uma váriavel e usar ele depois
+const somar = somarTresNumeros(5,4,8);
+
+console.log("O valor de somar é " + somar);
+
+
+function podeDirigirr(idade, cnh) {
     if(idade >= 18 && cnh == true) {
-        console.log("Pode dirigir");
+        return "Pode dirigir";
     } else {
-        console.log("Não pode dirigir");
+        return "Não pode dirigir";
     }
 }
 
-podeDirigir(18, true);
-podeDirigir(25, true);
-podeDirigir(44, 0); // 0 é considerado false
-podeDirigir(19, 1); // 1 é considerado true, mas o ideal é passar um booleano mesmo, ou seja, true ou false.
+console.log(podeDirigirr(18, true));
+console.log(podeDirigirr(25, true));
+console.log(podeDirigirr(44, 0)); // 0 é considerado false
+console.log(podeDirigirr(19, 1)); // 1 é considerado true, mas o ideal é passar um booleano mesmo, ou seja, true ou false.
+console.log(podeDirigirr(17, false));
