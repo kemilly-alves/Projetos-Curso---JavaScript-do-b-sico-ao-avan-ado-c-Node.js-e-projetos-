@@ -143,7 +143,7 @@ function checkWinCondition() {
             declareWinner('x');
         } else if(b7Child == 'o' && b8Child == 'o' && b9Child == 'o') {
             // o 
-            cdeclareWinner('o');
+            declareWinner('o');
         }
     }
 

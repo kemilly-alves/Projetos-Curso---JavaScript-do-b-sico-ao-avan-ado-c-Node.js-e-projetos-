@@ -10,7 +10,7 @@ window.addEventListener("keydown", function(e) {
 
 window.addEventListener("keyup", function(e) {
 
-    if(e.key = "Enter") {
+    if(e.key === "Enter") {
         console.log("Soltou o enter");
     }
 

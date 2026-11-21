@@ -1,4 +1,4 @@
-let p = Promise.resolve(new Error("Não deu certo"));
+let p = Promise.reject(new Error("Não deu certo"));
 
 console.log("lalala");
 

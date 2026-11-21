@@ -118,7 +118,7 @@ const products = [
 ]
 
 products.map((product) => {
-    if(product.category = 'Roupas') {
+    if(product.category === 'Roupas') {
         product.onSale = true
     }
 })
@@ -151,12 +151,12 @@ const productDelails = {
 const {
     name: productName,
     price,
-    category, productCategory,
+    category,
     color,
 } = productDelails
 
 console.log(
-    `O nome do produto é ${productName}, custa R$${price}, pertence a categoria ${productCategory} e é da cor ${color}`
+    `O nome do produto é ${productName}, custa R$${price}, pertence a categoria ${category} e é da cor ${color}`
 )
 
 // 7 spread operator
